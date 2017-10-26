@@ -1,6 +1,6 @@
-#Jenkins下启动、停止Spring Cloud Jar包项目的Shell脚本
+# Jenkins下启动、停止Spring Cloud Jar包项目的Shell脚本
 
-##1.Jenkins中"Execute shell"的Command
+## 1.Jenkins中"Execute shell"的Command
 
 ```shell
 cd /Users/Shared/myservice
@@ -12,7 +12,7 @@ BUILD_ID=dontKillMe sh jenkins-manager.sh start &
 2. Linux环境下可能需要写成 “BUILD_ID=dontKillMe nohup”
 3. Mac环境下无须“nohup”(会报错)
 
-##2. jenkins-manager.sh
+## 2. jenkins-manager.sh
 
 ```shell
 #!/bin/sh
