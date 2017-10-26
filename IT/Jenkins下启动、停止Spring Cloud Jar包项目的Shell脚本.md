@@ -1,6 +1,6 @@
 #Jenkins下启动、停止Spring Cloud Jar包项目的Shell脚本
 
-## 1.Jenkins中"Execute shell"的Command
+##1.Jenkins中"Execute shell"的Command
 
 ```shell
 cd /Users/Shared/myservice
