@@ -17,10 +17,11 @@ BUILD_ID=dontKillMe sh jenkins-manager.sh start &
 ```shell
 #!/bin/sh
 
+
 APP_PATH=/Users/Shared/Jenkins/Home/workspace/my-maven-test/my-test-project/target/
 APP_NAME=my-test-project
-APP_FILE=${APP_PATH}${APP_NAME}.jar
 APP_APP_PROFILE=dev
+APP_FILE=${APP_PATH}${APP_NAME}.jar
 
 JAVA_XMS=128m
 JAVA_XMX=1024m
