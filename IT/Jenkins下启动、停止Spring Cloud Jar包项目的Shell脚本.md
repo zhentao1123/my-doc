@@ -20,6 +20,7 @@ BUILD_ID=dontKillMe sh jenkins-manager.sh start &
 APP_PATH=/Users/Shared/Jenkins/Home/workspace/my-maven-test/my-test-project/target/
 APP_NAME=my-test-project
 APP_FILE=${APP_PATH}${APP_NAME}.jar
+APP_APP_PROFILE=dev
 
 JAVA_XMS=128m
 JAVA_XMX=1024m
@@ -30,7 +31,7 @@ echo "==== Do Start ===="
 if [ -f ${APP_FILE} ]
 then
   chmod 777 ${APP_FILE}
-  java -Xms${JAVA_XMS} -Xmx${JAVA_XMX} -jar ${APP_FILE}
+  java -Xms${JAVA_XMS} -Xmx${JAVA_XMX} -jar ${APP_FILE} --spring.profiles.active=${APP_PROFILE}
 else
   echo "There is no app file"
 fi
